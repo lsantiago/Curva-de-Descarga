@@ -35,7 +35,7 @@ curvaDescarga <- function(df, ho=0.25){
   Q <- a * (variacion)^n
   
 	# Gráfica de curva de descarga
-	# TODO: Revisar información a utilizar
+	# TODO: Revisar información a utilizar para graficas
 	#plot(Q, h, main = "Curva de descarga")
 
   # Gráfica de ajuste lineal
