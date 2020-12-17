@@ -1,4 +1,5 @@
 ## Lectura de datos ----
+# TODO: Agregar nuevos datos de prueba en carpeta data
 dCaudalesSantaAna = read.csv("data/caudales.csv", sep = ";", header=T)
 
 ## Definición de función para cálculo de curva de descarga ----
@@ -27,6 +28,7 @@ curvaDescarga <- function(df, ho=0.25){
   n <- summary(mod)$coef[2,1]
   
   # Cálcular a
+	# TODO: Definir que es "a"
   a <- 10^(1.742)
   
   # Cálcular Q (caudal calculado)
@@ -41,8 +43,11 @@ curvaDescarga <- function(df, ho=0.25){
   abline(mod, col="red")
   
 	print("Finalizado: Visualiza la gráfica en Rplots.pdf")
+
 }
 
 ## Uso de función de curvatura de descarga
 curvaDescarga(dCaudalesSantaAna)
+
+
 
